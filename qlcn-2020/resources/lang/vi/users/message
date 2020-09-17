@@ -1,0 +1,36 @@
+<?php
+/**
+* Language file for user error/success messages
+*
+*/
+
+return [
+
+    'user_exists'              => 'Người dùng đã tồn tại!',
+    'user_not_found'           => 'Người dùng [:id] không tồn tại.',
+    'user_login_required'      => 'Trường đăng nhập là bắt buộc.',
+    'user_password_required'   => 'Trường mật khẩu là bắt buộc.',
+    'insufficient_permissions' => 'Không đủ quyền.',
+    'banned'                    => 'Cấm',
+    'suspended'                 => 'Treo',
+
+    'success' => [
+        'create'    => 'Tạo người dùng thành công.',
+        'update'    => 'Cập nhật người dùng thành công.',
+        'delete'    => 'Xóa người dùng thành công.',
+        'ban'       => 'Cấm người dùng thành công.',
+        'unban'     => 'Hủy cấm người dùng thành công.',
+        'suspend'   => 'Treo người dùng thành công.',
+        'unsuspend' => 'Hủy treo người dùng thành công.',
+        'restored'  => 'Khôi phục người dùng thành công.'
+    ],
+
+    'error' => [
+        'create'    => 'Có một vấn đề khi tạo người dùng. Vui lòng thử lại.',
+        'update'    => 'Có một vấn đề khi cập nhật người dùng. Vui lòng thử lại.',
+        'delete'    => 'Có một vấn đề khi xóa người dùng. Vui lòng thử lại.',
+        'unsuspend' => 'Có một vấn đề khi hủy treo người dùng. Vui lòng thử lại.',
+        'file_type_error'   => 'Chỉ cho phép đuôi jpg, jpeg, bmp, png.',
+    ],
+
+];

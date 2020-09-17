@@ -1,0 +1,50 @@
+<?php
+/**
+* Language file for auth error messages
+*
+*/
+
+return array(
+
+    'account_already_exists' => 'Một tài khoản với email này đã tồn tại.',
+    'account_not_found' => 'Email hoặc mật khẩu không đúng.',
+    'account_email_not_found' =>'Email không đúng.',
+    'account_not_activated'  => 'Tài khoản người dùng này chưa được kích hoạt.',
+    'account_suspended'      => 'Tài khoản người dùng bị treo vì thử quá nhiều lần đăng nhập. Thử lại sau [:delay] giây',
+    'account_banned'         => 'Tài khoản người dùng này bị cấm.',
+
+    'signin' => array(
+        'error'   => 'Có một vấn đề trong khi cố gắng đăng nhập bạn, vui lòng thử lại.',
+        'success' => 'Bạn đã đăng nhập thành công.',
+    ),
+
+    'login' => array(
+        'error'   => 'Có một vấn đề trong khi cố gắng đăng nhập bạn, vui lòng thử lại.',
+        'success' => 'Bạn đã đăng nhập thành công.',
+    ),
+
+    'signup' => array(
+        'error'   => 'Có một vấn đề trong khi cố gắng tạo tài khoản của bạn, vui lòng thử lại.',
+        'success' => 'Tạo tài khoản thành công.',
+    ),
+
+        'forgot-password' => array(
+            'error'   => 'Có một vấn đề trong khi cố gắng lấy lại mã mật khẩu, vui lòng thử lại.',
+            'success' => 'Email khôi phục mật khẩu được gửi thành công.',
+        ),
+
+        'forgot-password-confirm' => array(
+            'error'   => 'Có một vấn đề trong khi cố gắng đặt lại mật khẩu của bạn, vui lòng thử lại.',
+            'success' => 'Mật khẩu của bạn đã được đặt lại thành công.',
+        ),
+
+    'activate' => array(
+        'error'   => 'Có một vấn đề trong khi cố gắng kích hoạt tài khoản của bạn, vui lòng thử lại.',
+        'success' => 'Tài khoản của bạn đã được kích hoạt thành công.',
+    ),
+
+    'contact' => array(
+        'error'   => 'Có một vấn đề trong khi cố gắng gửi biểu mẫu liên hệ, vui lòng thử lại.',
+        'success' => 'Chi tiết liên lạc của bạn đã được gửi thành công.',
+    ),
+);

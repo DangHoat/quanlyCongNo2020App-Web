@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btnOption"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="center"
+            android:src="@drawable/ic_info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvTotal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_info" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDiachi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Địa Chỉ"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvLoaiHang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Chủng loại hàng"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvDiachi"
+            app:layout_constraintStart_toStartOf="@+id/tvDiachi"
+            app:layout_constraintTop_toBottomOf="@+id/tvDiachi"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvSoluong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng : 10 "
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvDiachi"
+            app:layout_constraintTop_toBottomOf="@+id/tvTenHang" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvDonViTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn vị Tính  : m2 "
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvDiachi"
+            app:layout_constraintStart_toEndOf="@+id/tvSoluong"
+            app:layout_constraintTop_toBottomOf="@+id/tvTenHang" />
+
+        <CheckBox
+            android:checked="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:background="@color/background"
+            android:visibility="gone"
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvTenHang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hạng mục hàng "
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnOption"
+            app:layout_constraintStart_toStartOf="@+id/tvLoaiHang"
+            app:layout_constraintTop_toBottomOf="@+id/tvLoaiHang" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:text="Dư nợ"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/tvDiachi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="ngày tháng"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvTotal"
+            app:layout_constraintStart_toEndOf="@+id/tvDiachi"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotal"
+            app:layout_constraintWidth_percent="0.25" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
